@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Servicio</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #36393f;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .status-bar {
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .status-ok {
+            background-color: #faa61a; /* verde */
+        }
+
+        .status-issue {
+            background-color: #faa61a; /* amarillo */
+        }
+
+        .status-down {
+            background-color: #f04747; /* rojo */
+        }
+
+        .status-bar span {
+            margin-left: 10px;
+        }
+
+        .status-content {
+            margin-top: 50px;
+            text-align: center;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .service {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #2f3136;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+
+        .service p {
+            margin: 0;
+            font-size: 14px;
+            color: #b9bbbe;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de estado general -->
+    <div class="status-bar status-ok">
+        Good Bye Api
+    </div>
+
+    <div class="status-content">
+        <!-- Servicios individuales -->
+        <div class="service">
+            <h3>Desktop aplication</h3>
+            <p>Operating</p>
+        </div>
+
+        <div class="service">
+            <h3>Website</h3>
+            <p>Operating</p>
+        </div>
+
+        <div class="service">
+            <h3>API</h3>
+            <p>fatal</p>
+        </div>
+    </div>
+
+</body>
+</html>
